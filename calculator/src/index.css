@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+.calculator-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.container-calculator{
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.output-screen input {
+  border: 0px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  text-align: right;
+  width: 100%;
+  padding: 20px;
+}
+
+.btn{
+  display: flex;
+}
+
+input[type='button']{
+  flex-basis: 25%;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+input[type='button']:active{
+  background: #ccc;
+}
+
+input[value="="]{
+  background-color: orange;
+}
+
+
+
