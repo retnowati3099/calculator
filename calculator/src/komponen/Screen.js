@@ -1,8 +1,6 @@
-import HandleClick from "./HandleClick";
-
 function OutputScreen(props){
     return (
-        <div class="output-screen">
+        <div className="output-screen">
             <input type="text" readOnly value={props.value}/>
         </div>
     );

@@ -21,6 +21,7 @@ code {
   text-align: center;
   font-weight: bold;
   font-size: 32px;
+  margin-top: 15px;
 }
 
 .container-calculator{
@@ -39,6 +40,7 @@ code {
   background-color: black;
   color: white;
   font-size: 24px;
+  font-weight: bold;
   text-align: right;
   width: 100%;
   padding: 20px;
@@ -51,7 +53,6 @@ code {
 input[type='button']{
   flex-basis: 25%;
   border: 1px solid black;
-  border-radius: 7px;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -68,5 +69,17 @@ input[value="="]{
   background-color: orange;
 }
 
+input[type="text"]:focus{
+    outline: none;
+} 
+
+@media screen and (max-width:436px){
+  input[type='button']{
+    font-size: 16px;
+  }
+  .output-screen input {
+    font-size: 16px;
+  }
+}
 
 
